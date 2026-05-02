@@ -11,6 +11,7 @@
 <style>
     body {
         background-color: black;
+        
     }
     h1{
         color: white;
@@ -42,6 +43,12 @@
 <body>
    <h1 >GHUB</h1> 
    <h3 id="beta">beta</h3>
-   <button id="login">login</button>
+   <button id="login" onclick="loginpage()">login</button>
+
+   <script>
+       function loginpage() {
+           window.location.href = 'login.html';
+       }
+   </script>
 </body>
 </html>
