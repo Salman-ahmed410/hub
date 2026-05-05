@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+       <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Audiowide&display=swap" rel="stylesheet">
+</head>
+<style>
+    body{
+        background-color: black;
+        color:white;
+        text-align: center;
+        font-family: audiowide, cursive;
+    }
+
+    .signup-box {
+        max-width: 300px;
+        margin: 60px auto;
+        padding: 32px;
+        border: 2px solid white;
+        border-radius: 24px;
+        background-color: rgba(255, 255, 255, 0.05);
+        width: 100%;
+    }
+
+    .signup-box h2 {
+        margin-bottom: 24px;
+        font-size: 2rem;
+    }
+
+    .signup-box label {
+        display: block;
+        text-align: center;
+        margin: 14px 0 6px;
+        font-size: 1rem;
+    }
+
+    .signup-box input {
+        size: 500px;
+        padding: 12px 14px;
+        border: 2px solid white;
+        border-radius: 16px;
+        background: transparent;
+        color: white;
+        font-family: audiowide, cursive;
+        font-size: 1rem;
+        
+    }
+
+    .signup-box button {
+        margin-top: 24px;
+        size: 500px;
+        padding: 14px;
+        border: 2px solid white;
+        border-radius: 20px;
+        background: transparent;
+        color: lightskyblue;
+        font-family: audiowide, cursive;
+        font-size: 1.1rem;
+        cursor: pointer;
+    }
+
+    .signup-box button:hover {
+        background-color: rgba(255, 255, 255, 0.08);
+    }
+   h2{
+      font: size 200px;
+   }
+</style>
+<body>
+    <div class="signup-box">
+        <h2>Create your account</h2>
+        <form>
+            <label for="username">Username</label>
+            <input id="username" name="username" type="text" placeholder="Choose a username" required>
+
+            <label for="email">Email</label>
+            <input id="email" name="email" type="email" placeholder="you@example.com" required>
+
+            <label for="birthdate">Birth date</label>
+            <input id="birthdate" name="birthdate" type="date" required>
+
+            <button type="submit">Create account</button>
+        </form>
+    </div>
+</body>
+</html>

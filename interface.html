@@ -25,30 +25,52 @@
          font-family: audiowide, cursive;
          font-size: 75px;
     }
-    #login{
+    .button-container {
+        display: flex;
+        justify-content: center;
+        gap: 24px;
+        margin-top: 40px;
+        flex-wrap: wrap;
+    }
+
+    #login,
+    #create-account {
         color: lightskyblue;
-         text-align: center;
-         font-family: audiowide, cursive;
-         font-size: 50px;
-         display: block;
-         margin-left: auto;
-         margin-right: auto;
-         background-color: transparent;
-         border: 2px solid white;
-         padding: 10px 20px;
-         cursor: pointer;
+        text-align: center;
+        font-family: audiowide, cursive;
+        font-size: 50px;
+        background-color: transparent;
+        border: 5px solid white;
+        border-radius: 28px;
+        padding: 12px 28px;
+        cursor: pointer;
+        transition: background-color 0.2s ease, transform 0.2s ease;
+    }
+
+    #login:hover,
+    #create-account:hover {
+        color:white;
+        background-color:lightskyblue
     }
 
     </style>
 <body>
    <h1 >GHUB</h1> 
    <h3 id="beta">beta</h3>
-   <button id="login" onclick="loginpage()">login</button>
-
+   <div class="button-container">
+    <button id="login" onclick="loginpage()">login</button>
+    <button id="create-account" onclick="changepage()">sign up</button>
+   </div>
+   
    <script>
        function loginpage() {
            window.location.href = 'login.html';
        }
+   </script>
+   <script>
+    function changepage() {
+        window.location.href = 'signup.html';
+    }
    </script>
 </body>
 </html>
